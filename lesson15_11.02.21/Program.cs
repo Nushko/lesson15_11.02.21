@@ -70,16 +70,19 @@ namespace lesson15_11._02._21
                     tempinput = Console.ReadLine();
                     if (string.IsNullOrEmpty(tempinput))
                         customers.FirstName = tempinput;
+                    tempinput = "";
 
                     Console.Write("SecondName: ");
                     tempinput = Console.ReadLine();
                     if (string.IsNullOrEmpty(tempinput))
                         customers.LastName = tempinput;
+                    tempinput = "";
 
                     Console.Write("PhoneNumb: ");
                     tempinput = Console.ReadLine();
                     if (string.IsNullOrEmpty(tempinput))
                         customers.PhoneNum = tempinput;
+                    tempinput = "";
 
                     ctx.SaveChanges();
                 }
